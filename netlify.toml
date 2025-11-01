@@ -1,0 +1,7 @@
+[build]
+  command = "corepack enable && pnpm install && pnpm run build"
+  publish = ".next"
+  environment = { NODE_VERSION = "18" }
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
